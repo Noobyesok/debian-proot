@@ -1,3 +1,9 @@
+After install:
+  ubuntu   -> login
+  vncstart -> start desktop
+  vncstop  -> stop desktop
+
+
 ## Installation
 
 Copy and paste this command in Termux:
@@ -7,7 +13,3 @@ curl -s https://raw.githubusercontent.com/Noobyesok/debian-proot/refs/heads/main
 
 
 
-After install:
-  ubuntu   -> login
-  vncstart -> start desktop
-  vncstop  -> stop desktop
