@@ -1,0 +1,4 @@
+#!/data/data/com.termux/files/usr/bin/sh
+proot-distro login ubuntu -- bash -lc 'vncserver -kill :1 || true; rm -rf /tmp/.X1-lock /tmp/.X11-unix/X1 || true'
+pulseaudio --kill || true
+echo "VNC stopped"
