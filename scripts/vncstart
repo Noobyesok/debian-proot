@@ -1,0 +1,10 @@
+#!/data/data/com.termux/files/usr/bin/sh
+pulseaudio --start --exit-idle-time=-1 >/dev/null 2>&1 &
+proot-distro login ubuntu -- bash -lc '
+if pgrep Xvnc >/dev/null 2>&1; then
+  echo "VNC already running"
+  exit 0
+fi
+vncserver :1 -geometry 1366x768 -depth 24 -localhost no
+'
+echo "VNC started at localhost:5901"
