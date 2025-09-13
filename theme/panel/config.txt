@@ -1,0 +1,3 @@
+/configver 2
+/panels uint32 1
+/panels/panel-0/size uint32 24
